@@ -1,0 +1,139 @@
+.wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 230px; /*0*/
+    height: 100%;
+    margin-left: -250px;
+    /*overflow-y: auto;*/
+    background: #5A799A; /*f1f1f1*/
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    padding-left: 230px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.brand .logo-lg {
+    display: block;
+}
+.brand .logo-mini {
+    display: none;
+}
+
+@media (max-width: 767px) {
+  .sidebar-wrapper {
+        z-index: 1000;
+        position: fixed;
+        left: 250px;
+        width: 50px; /*0*/
+        height: 100%;
+        margin-left: -250px;
+        /*overflow-y: auto;*/
+        background: #5A799A; /*f1f1f1*/
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    .page-content-wrapper {
+        width: 100%;
+        position: absolute;
+        padding: 0px;
+        padding-left: 50px;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    .brand .logo-lg {
+        display: none;
+    }
+    .brand .logo-mini {
+        display: block;
+    }
+}
+
+.sidebar-wrapper .panel,
+.sidebar-wrapper .list-group,
+.sidebar-wrapper .list-group-item {
+    background-color: transparent;
+    border: 0px;
+    border-radius: 0px;
+}
+
+.sidebar-wrapper .sublinks {
+    background-color: #869fb9;
+}
+
+.sidebar-wrapper .sublinks > a.list-group-item:hover {
+    background-color: #385b7f;
+}
+
+.sidebar-wrapper .list-group-item {
+    color: #f9f9f9;
+}
+
+a.list-group-item:hover {
+    background-color: #35597D;
+    color: #f9f9f9;
+}
+
+a.list-group-item.brand {
+    padding: 8px;
+    height:50px;
+    background-color: #385b7f;
+}
+
+.accordion-toggle:hover {
+    text-decoration: none;
+}
+.accordion-toggle:focus {
+    text-decoration: none;
+}
+
+.accordion-toggle:before {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    color: #fff;         /* adjust as needed */
+}
+
+.accordion-toggle.collapsed:before {
+    /* symbol for "collapsed" panels */
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+}
+
+a.list-group-item:hover,
+button.list-group-item:hover,
+a.list-group-item:focus,
+button.list-group-item:focus {
+  text-decoration: none;
+  background-color: #35597D;
+  color: #fff;
+}
+
+.page-content-wrapper > .navbar {
+    border-radius: 0px;
+    border:0px;
+}

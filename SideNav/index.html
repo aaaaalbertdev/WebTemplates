@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>SideNav</title>
+        <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../Styles/Site.css">
+        <link rel="stylesheet" href="../Styles/SideNav.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="sidebar-wrapper">
+                <div id="accordion">
+                    <div class="panel list-group">
+                        <a href="#" class="list-group-item brand">
+                            <span class="logo-mini">SNV</span>
+                            <span class="logo-lg">SideNav</span>
+                        </a>
+                        <a href="#" class="list-group-item accordion-toggle" data-toggle="collapse" data-target="#menu_1" data-parent="#accordion">Menu 1</a>
+                        <div id="menu_1" class="sublinks collapse">
+                            <a href="#" class="list-group-item small">&nbsp;Submenu 1</a>
+                            <a href="#" class="list-group-item small">&nbsp;Submenu 2</a>
+                        </div>
+                        <a href="#" class="list-group-item accordion-toggle" data-toggle="collapse" data-target="#menu_2" data-parent="#accordion">Menu 2</a>
+                        <div id="menu_2" class="sublinks collapse">
+                            <a href="#" class="list-group-item small accordion-toggle" data-toggle="collapse" data-target="#submenu_1">&nbsp;Submenu 1</a>
+                            <div id="submenu_1" class="sublinks collapse">
+                                <a href="#" class="list-group-item small">&nbsp;&nbsp;Deeper 1</a>
+                                <a href="#" class="list-group-item small">&nbsp;&nbsp;Deeper 2</a>
+                            </div>
+                            <a href="#" class="list-group-item small">&nbsp;Submenu 2</a>
+                        </div>
+                        <a href="#" class="list-group-item accordion-toggle" data-toggle="collapse" data-target="#menu_3" data-parent="#accordion">Menu 3</a>
+                        <div id="menu_3" class="sublinks collapse">
+                            <a href="#" class="list-group-item small">&nbsp;Submenu 1</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-content-wrapper">
+                <nav class="navbar navbar-blue">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <div class="text-center">
+                            <a class="navbar-brand" href="#">Brand</a>
+                            </div>     
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Albert Rick Martires</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    Albert
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
