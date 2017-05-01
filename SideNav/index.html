@@ -4,6 +4,7 @@
     <head>
         <title>SideNav</title>
         <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
         <link rel="stylesheet" href="../Styles/Site.css">
         <link rel="stylesheet" href="../Styles/SideNav.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
@@ -18,24 +19,81 @@
                             <span class="logo-mini">SNV</span>
                             <span class="logo-lg">SideNav</span>
                         </a>
-                        <a href="#" class="list-group-item accordion-toggle" data-toggle="collapse" data-target="#menu_1" data-parent="#accordion">Menu 1</a>
+                        <!--Menu 1-->
+                        <!--This button displays when in large screen mode-->
+                        <a href="#" class="list-group-item accordion-toggle logo-lg" data-toggle="collapse" data-target="#menu_1" data-parent="#accordion">
+                            <i class="fa fa-dashboard"></i> Menu 1
+                        </a>
                         <div id="menu_1" class="sublinks collapse">
-                            <a href="#" class="list-group-item small">&nbsp;Submenu 1</a>
-                            <a href="#" class="list-group-item small">&nbsp;Submenu 2</a>
+                            <a href="#" class="list-group-item small">
+                                <i class="fa fa-circle-thin"></i> Submenu 1
+                            </a>
+                            <a href="#" class="list-group-item small">
+                                <i class="fa fa-circle-thin"></i> Submenu 2
+                            </a>
                         </div>
-                        <a href="#" class="list-group-item accordion-toggle" data-toggle="collapse" data-target="#menu_2" data-parent="#accordion">Menu 2</a>
+                        <!--This button displays when in small screen mode-->
+                        <div class="dropdown">
+                            <a href="#" class="list-group-item logo-mini">
+                                <i class="fa fa-dashboard fa-lg"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header">Menu 1</li>
+                                <li><a href="#"><i class="fa fa-circle-thin"></i> Submenu 1</a></li>
+                                <li><a href="#"><i class="fa fa-circle-thin"></i> Submenu 2</a></li>
+                            </ul>
+                        </div>
+                        <!--Menu 1-->
+                        <!--Menu 2-->
+                        <!--This button displays when in large screen mode-->
+                        <a href="#" class="list-group-item accordion-toggle logo-lg" data-toggle="collapse" data-target="#menu_2" data-parent="#accordion">
+                            <span class="logo-lg"><i class="fa fa-database"></i> Menu 2</span>
+                        </a>
                         <div id="menu_2" class="sublinks collapse">
-                            <a href="#" class="list-group-item small accordion-toggle" data-toggle="collapse" data-target="#submenu_1">&nbsp;Submenu 1</a>
+                            <a href="#" class="list-group-item small accordion-toggle" data-toggle="collapse" data-target="#submenu_1"><i class="fa fa-circle-thin"></i> Submenu 1</a>
                             <div id="submenu_1" class="sublinks collapse">
-                                <a href="#" class="list-group-item small">&nbsp;&nbsp;Deeper 1</a>
-                                <a href="#" class="list-group-item small">&nbsp;&nbsp;Deeper 2</a>
+                                <a href="#" class="list-group-item small"><i class="fa fa-circle-thin"></i> Deeper 1</a>
+                                <a href="#" class="list-group-item small"><i class="fa fa-circle-thin"></i> Deeper 2</a>
                             </div>
-                            <a href="#" class="list-group-item small">&nbsp;Submenu 2</a>
+                            <a href="#" class="list-group-item small"><i class="fa fa-circle-thin"></i> Submenu 2</a>
                         </div>
-                        <a href="#" class="list-group-item accordion-toggle" data-toggle="collapse" data-target="#menu_3" data-parent="#accordion">Menu 3</a>
+                        <!--This button displays when in small screen mode-->
+                        <div class="dropdown">
+                            <a href="#" class="list-group-item logo-mini">
+                                <i class="fa fa-database fa-lg"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header">Menu 2</li>
+                                <li>
+                                    <a href="#" class="accordion-toggle" data-toggle="collapse" data-target="#sm_1"><i class="fa fa-circle-thin"></i> Submenu 1</a>
+                                    <div id="sm_1" class="collapse">
+                                        <a href="#" class="list-group-item small"><i class="fa fa-circle-thin"></i> Deeper 1</a>
+                                        <a href="#" class="list-group-item small"><i class="fa fa-circle-thin"></i> Deeper 2</a>
+                                    </div>
+                                </li>
+                                <li><a href="#"><i class="fa fa-circle-thin"></i> Submenu 2</a></li>
+                            </ul>
+                        </div>
+                        <!--Menu 2-->
+                        <!--Menu 3-->
+                        <!--This button displays when in large screen mode-->
+                        <a href="#" class="list-group-item accordion-toggle logo-lg" data-toggle="collapse" data-target="#menu_3" data-parent="#accordion">
+                            <i class="fa fa-gear"></i> Menu 3
+                        </a>
                         <div id="menu_3" class="sublinks collapse">
-                            <a href="#" class="list-group-item small">&nbsp;Submenu 1</a>
+                            <a href="#" class="list-group-item small"><i class="fa fa-circle-thin"></i> Submenu 1</a>
                         </div>
+                        <!--This button displays when in small screen mode-->
+                        <div class="dropdown">
+                            <a href="#" class="list-group-item logo-mini">
+                                <i class="fa fa-gear fa-lg"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header">Menu 3</li>
+                                <li><a href="#"><i class="fa fa-circle-thin"></i> Submenu 1</a></li>
+                            </ul>
+                        </div>
+                        <!--Menu 3-->
                     </div>
                 </div>
             </div>
@@ -50,7 +108,11 @@
                         </div>
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Albert Rick Martires</a></li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-user-circle"></i> Albert Rick Martires
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
