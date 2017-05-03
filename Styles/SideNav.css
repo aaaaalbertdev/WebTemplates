@@ -24,8 +24,12 @@
 .page-content-wrapper {
     width: 100%;
     position: absolute;
-    padding: 0px;
+    padding-top: 0px;
     padding-left: 230px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -58,7 +62,7 @@
 
     .page-content-wrapper {
         width: 100%;
-        position: absolute;
+        position: relative;
         padding: 0px;
         padding-left: 50px;
         -webkit-transition: all 0.5s ease;
@@ -84,6 +88,7 @@
 
 .sidebar-wrapper .sublinks {
     background-color: #9d9c9c;
+    font-size:medium;
 }
 
 .sidebar-wrapper .sublinks a.list-group-item {
@@ -113,7 +118,7 @@
 }
 
 a.list-group-item:hover {
-    transition: all 0.3s;
+    transition: all 0.3s ease;
     background-color: #6b6a6a;
     color: #f9f9f9;
     border-left: 2px solid #f1f1f1;
@@ -123,21 +128,34 @@ a.list-group-item:hover,
 button.list-group-item:hover,
 a.list-group-item:focus,
 button.list-group-item:focus {
-  text-decoration: none;
-  background-color: #6b6a6a;
-  color: #fff;
+    text-decoration: none;
+    background-color: #6b6a6a;
+    color: #fff;
 }
 
 a.list-group-item.brand {
-    padding: 8px;
+    padding: 10px; /*8px;*/
+    padding-left: 9px; /*8px;*/
     margin-bottom:1px;
     height:51px;
-    background-color: #385b7f;
+    background-color: #35597D;
     border-bottom: 0.5px solid #f1f1f1;
 }
 
+/*Added for WP*/
+a.list-group-item.brand .logo-mini img {
+    width:36x;
+    height:32px;
+}
+
+a.list-group-item.brand .logo-lg img {
+    width:210px;
+    height:32px;
+}
+/*Added for WP*/
+
 a.list-group-item.brand:hover {
-    background-color: #385b7f;
+    background-color: #35597D;
     color: #f9f9f9;
     border:none;
     border-bottom: 0.5px solid #f1f1f1;
@@ -208,7 +226,7 @@ a.list-group-item.brand:hover {
         z-index: 100;
         display: none;
         float: right;
-        min-width: 200px;
+        min-width: 240px;
         padding: 0;
         margin: 0;
         font-size: 14px;
@@ -223,6 +241,12 @@ a.list-group-item.brand:hover {
           box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
           opacity: 0;
           transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    }
+
+    .sidebar-wrapper .dropdown-menu .dropdown-menu {
+        top: 0;
+        left: 240px;
+        z-index: 100;
     }
 
     .sidebar-wrapper .dropdown-menu > li.dropdown-header {
@@ -245,7 +269,8 @@ a.list-group-item.brand:hover {
         display: block;
         padding: 5px 20px;
         clear: both;
-        font-weight: normal;
+        font-weight: bold;
+        font-size: smaller;
         line-height: 1.42857143;
         color: #fff;
         white-space: nowrap;

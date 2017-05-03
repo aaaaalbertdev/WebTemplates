@@ -1,0 +1,10 @@
+[{"Name":"Denmar Ong","Role":"Assistant Vice President","Leader":"null","Organization":"Digital Information Services","ImgPath":"../OrgChart/Images/default.png"},
+{"Name":"Richard Pineda","Role":"Operations Manager","Leader":"Denmar Ong","Organization":"IS Operations","ImgPath":"../OrgChart/Images/default.png"},
+{"Name":"Gian Karlo Villaluz","Role":"Team Leader","Leader":"Richard Pineda","Organization":"Enterprise Solutions Development","ImgPath":"../OrgChart/Images/gk.jpg"},
+{"Name":"Albert Rick Martires","Role":"Software Developer","Leader":"Gian Karlo Villaluz","Organization":"Enterprise Solutions Development","ImgPath":"../OrgChart/Images/albert.jpg"},
+{"Name":"Joyce Bermoy","Role":"Tech Lead Developer","Leader":"Gian Karlo Villaluz","Organization":"Enterprise Solutions Development","ImgPath":"../OrgChart/Images/joys.jpg"},
+{"Name":"Eros Niko Alvarez","Role":"Software Developer","Leader":"Gian Karlo Villaluz","Organization":"Enterprise Solutions Development","ImgPath":"../OrgChart/Images/eros.jpg"},
+{"Name":"Federico Sarmiento","Role":"Software Developer","Leader":"Gian Karlo Villaluz","Organization":"Enterprise Solutions Development","ImgPath":"../OrgChart/Images/nick.jpg"},
+{"Name":"Josephine Lem-it","Role":"Senior Software Developer","Leader":"Gian Karlo Villaluz","Organization":"Enterprise Solutions Development","ImgPath":"../OrgChart/Images/default.png"},
+{"Name":"Mathew Catibo","Role":"Software Developer","Leader":"Gian Karlo Villaluz","Organization":"Enterprise Solutions Development","ImgPath":"../OrgChart/Images/default.png"},
+{"Name":"Luis Alfredo Blanco","Role":"Software Developer","Leader":"Gian Karlo Villaluz","Organization":"Enterprise Solutions Development","ImgPath":"../OrgChart/Images/default.png"}]

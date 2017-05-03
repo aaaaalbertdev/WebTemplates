@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>OrgChart</title>
+        <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="../Styles/Site.css">
+        <link rel="stylesheet" href="../Styles/OrgChart.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+        <script src="../OrgChart/scripts/scripts.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <!--go up button-->
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="text-center">
+                    <a href="#" class="btn btn-default btn-md btn-circle">
+                        <span class="glyphicon glyphicon-chevron-up"></span>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <!--for head-->
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="col-md-2 col-md-offset-5">
+                        <div class="profile-card">
+                            <div class="profile-pic">
+                                <img src="../OrgChart/Images/gk.jpg">
+                            </div>
+                            <div class="profile-details">
+                                <h4>Gian Karlo Villaluz</h4>
+                                <p>Team Leader</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--for head-->
+            <!--for members-->
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="col-md-2">
+                        <div class="profile-card">
+                            <div class="profile-pic">
+                                <img src="../OrgChart/Images/joys.jpg">
+                            </div>
+                            <div class="profile-details">
+                                <h4>Joyce Bermoy</h4>
+                                <p>Tech Lead Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="profile-card">
+                            <div class="profile-pic">
+                                <img src="../OrgChart/Images/albert.jpg">
+                            </div>
+                            <div class="profile-details">
+                                <h4>Albert Rick Martires</h4>
+                                <p>Software Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="profile-card">
+                            <div class="profile-pic">
+                                <img src="../OrgChart/Images/nick.jpg">
+                            </div>
+                            <div class="profile-details">
+                                <h4>Federico Sarmiento</h4>
+                                <p>Software Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="profile-card">
+                            <div class="profile-pic">
+                                <img src="../OrgChart/Images/eros.jpg">
+                            </div>
+                            <div class="profile-details">
+                                <h4>Eros Niko Alvarez</h4>
+                                <p>Software Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="profile-card">
+                            <div class="profile-pic">
+                                <img src="../OrgChart/Images/default.png">
+                            </div>
+                            <div class="profile-details">
+                                <h4>Josephine Lem-it</h4>
+                                <p>Senior Software Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="profile-card">
+                            <div class="profile-pic">
+                                <img src="../OrgChart/Images/default.png">
+                            </div>
+                            <div class="profile-details">
+                                <h4>Mathew Catibo</h4>
+                                <p>Software Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="col-md-2">
+                        <div class="profile-card">
+                            <div class="profile-pic">
+                                <img src="../OrgChart/Images/default.png">
+                            </div>
+                            <div class="profile-details">
+                                <h4>Luis Alfredo Blanco</h4>
+                                <p>Software Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--for members-->
+        </div>
+        <table id="dis" class="table">
+            <thead></thead>
+            <tbody></tbody>
+        </table>
+        <script>
+            $(function () {
+                renderOrgChart('Albert Rick Martires');
+            });
+        </script>
+    </body>
+</html>
